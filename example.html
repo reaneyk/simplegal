@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SimpleGal Example</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="jquery.simplegal.js"></script>
+        <script>
+
+            $(document).ready(function(){
+                var thumbs = [
+                    'http://lorempixel.com/75/75/sports',
+                    'http://lorempixel.com/75/75/sports'
+                ];
+
+                 var larges = [
+                    'http://lorempixel.com/400/400/sports',
+                    'http://lorempixel.com/400/400/sports'
+                ];
+
+                $('#gallery').SimpleGal(thumbs, larges);
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <div id="gallery"></div>
+    </body>
+</html>
